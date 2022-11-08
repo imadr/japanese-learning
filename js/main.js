@@ -171,7 +171,7 @@ function next_char(){
 let score_ = 0;
 romaji_input.value = "";
 romaji_input.focus();
-romaji_input.onkeydown = function(e){
+romaji_input.addEventListener("keydown", function(e){
     if(e.keyCode == 13 && romaji_input.value.length > 0){
         let c = stuff[current_array][current_char];
         if(c[1].indexOf(romaji_input.value.toLowerCase()) > -1){
@@ -190,11 +190,11 @@ romaji_input.onkeydown = function(e){
         next_char();
         score_div.innerHTML = "Score: "+score_;
     }
-};
+});
 
-document.onkeydown = function(e){
+document.addEventListener("keydown", function(e){
     if(e.keyCode == 13) romaji_input.focus();
-}
+});
 
 function change_check(e){
     let at_least_one_check = false;
