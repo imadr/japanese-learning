@@ -1,0 +1,47 @@
+[data-theme="light"]{
+    --color-muted: #5f5f5f;
+    --color-bg-1: #fff;
+    --color-bg-2: #ececec;
+    --color-fg-1: black;
+    --color-code-bg: rgb(35, 34, 43);
+    --color-href: rgb(25, 110, 240);
+}
+[data-theme="dark"]{
+    --color-muted: #adadad;
+    --color-bg-1: rgb(20, 20, 25);
+    --color-bg-2: rgb(41, 41, 49);
+    --color-fg-1: white;
+    --color-code-bg: rgb(35, 34, 43);
+    --color-href: rgb(115, 170, 245);
+}
+a{
+    color: var(--color-href);
+}
+body{
+    color: var(--color-fg-1);
+    background-color: var(--color-bg-1);
+}
+h2{
+    border-bottom: 2px solid var(--color-fg-1);
+}
+pre{
+    background-color: var(--color-code-bg) !important;
+    color: var(--color-fg-1);
+}
+h2 > a{
+    color: var(--color-fg-1);
+}
+table, td, th{
+    border: 1px solid var(--color-fg-1);
+}
+svg{
+    stroke: var(--color-fg-1);
+}
+nav a{
+    color: var(--color-fg-1);
+}
+input{
+    color: var(--color-fg-1);
+    border-color: var(--color-fg-1);
+    background-color: var(--color-bg);
+}

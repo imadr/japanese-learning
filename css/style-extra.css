@@ -1,0 +1,164 @@
+body{
+    background-color: var(--color-bg-1, white);
+    color: var(--color-fg-1, black);
+    max-width: 100vw;
+    margin: 0;
+    padding: 1em;
+}
+#game{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#char{
+    display: inline-block;
+    font-size: 9em;
+    border: 9px solid var(--color-fg-1, black);
+    border-radius: 35px;
+    padding: 0.3em;
+    line-height: 1em;
+    max-width: 98vw;
+}
+#romaji{
+    margin-top: 1em;
+    color: var(--color-fg-1, black);
+    background-color: var(--color-bg-1, white);
+    border: 5px solid var(--color-fg-1, black);
+    border-radius: 5px;
+    width: 10em;
+    padding: 0.3em;
+    outline: none;
+    font-size: 2em;
+    text-align: center;
+    max-width: 98vw;
+}
+#score{
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+}
+#options-panel button{
+    width: 100%;
+}
+#options-panel{
+    font-weight: bold;
+    font-size: 1.1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    text-align: left;
+}
+#correction{
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+}
+button, #light{
+    font-family: "sans";
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-fg-1);
+    background-color: var(--color-bg-1);
+    border: 2px solid var(--color-fg-1);
+    border-radius: 6px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    transition: background-color 100ms linear;
+    transition: color 100ms linear;
+    outline: none;
+    user-select: none;
+    align-items: center;
+    font-weight: 600;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 9px;
+}
+button > svg, #light > svg{
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    vertical-align: text-top;
+}
+button:hover, #light:hover{
+    background-color: var(--color-fg-1);
+    color: var(--color-bg-1);
+}
+#light:hover svg{
+    stroke: var(--color-bg-1);
+}
+h1{
+    margin-bottom: 40px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    box-shadow: none;
+    font-family: "sans";
+}
+.chart-cell{
+    display: inline-block;
+    font-size: 2.7em;
+    border: 4px solid var(--color-fg-1, black);
+    border-radius: 10px;
+    padding: 0.1em;
+    padding-bottom: 0.7em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    position: relative;
+    margin: 6px;
+}
+.chart-cell-small{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5em;
+    border-top: 4px solid var(--color-fg-1, black);
+    font-weight: 600;
+}
+.chart-table{
+    margin-left: -6px;
+}
+.chart-title{
+    margin-top: 0.6em;
+    margin-left: 6px;
+    font-weight: 800;
+    font-size: 2em;
+}
+#options-panel-button{
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 3em;
+    z-index: 3;
+}
+@media only screen and (max-width: 900px){
+    #game{
+        top: 20%;
+    }
+    #char{
+        font-size: 8em;
+    }
+    #options-panel{
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-bg-1);
+        top: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1.5em;
+        padding-top: 4em;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 300px){
+    #char{
+        font-size: 30vw;
+    }
+}

@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+table, td, th{
+    border: 1px solid black;
+}
+a{
+    color: rgb(24, 112, 240);
+}
+h2 > a{
+    text-decoration: none;
+    color: initial;
+    background-color: initial;
+}
+@font-face{
+    font-family: "icon";
+    src: url("icon.woff2") format("woff2");
+}
+a:not(.a-no-icon)[href^="http://"]:after, a:not(.a-no-icon)[href^="https://"]:after{
+    font-family: "icon";
+    margin-left: 0px;
+    content: " \f08e";
+    font-size: 14px;
+}
+@font-face{
+    font-family: "mono";
+    src: url("IBMPlexMono-Regular-Latin1.woff2") format("woff2");
+    font-display: swap;
+}
+pre{
+    font-family: "mono", monospace;
+    border-radius: 5px;
+    padding: 0.7em !important;
+    margin-bottom: 0px;
+    background-color: #f3f3f3;
+    color: black;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.code-description{
+    text-align: right;
+    margin-bottom: 20px;
+}
+body{
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    max-width: 55rem;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+}
+h3, h2{
+    font-weight: normal;
+}
+h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+h2{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+}
+p{
+    line-height: 1.7;
+}
+.muted{
+    font-size: 15px;
+}
+hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+input{
+    font-family: sans-serif;
+}
+.math-block{
+    text-align: center;
+    margin-top: 1em;
+}
+nav{
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+nav a{
+    text-decoration: none;
+    color: initial;
+    font-weight: bold;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+}
+nav a:first-child{
+    margin-left: 0em;
+}
+nav a:last-child{
+    margin-right: 0em;
+}
+nav button{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+svg{
+    stroke: black;
+}
+#light{
+    padding: 0;
+    width: 1.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+input{
+    color: black;
+    border-color: black;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 3px;
+}
