@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kana app</title>
+    <title>Japanese app</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-theme.css">
     <link rel="stylesheet" href="css/style-extra.css">
@@ -17,12 +18,7 @@
     <button id="katakana-chart-button">カ Katakana chart</button><br>
     <div style="margin-top: 10px;">
         Practice:<br>
-        <input onclick="change_check(this);" type="checkbox" id="hiragana"><label for="hiragana">Hiragana</label><br>
-        <input onclick="change_check(this);" type="checkbox" id="dakuten-hiragana"><label for="dakuten-hiragana">Dakuten hiragana</label><br>
-        <input onclick="change_check(this);" type="checkbox" id="combo-hiragana"><label for="combo-hiragana">Combination hiragana</label><br>
-        <input onclick="change_check(this);" type="checkbox" id="katakana"><label for="katakana">Katakana</label><br>
-        <input onclick="change_check(this);" type="checkbox" id="dakuten-katakana"><label for="dakuten-katakana">Dakuten katakana</label><br>
-        <input onclick="change_check(this);" type="checkbox" id="combo-katakana"><label for="combo-katakana">Combination katakana</label>
+        <div id="checkboxes"></div>
     </div>
 </div>
 <div id="game">
